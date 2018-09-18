@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Arcade Game Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container" class="transparent">
+        <div id="board">
+            <p id="points"></p>
+            <p id="timer"></p>
+        </div>
+
+        <div id="canvas"></div>
+
+    </div>
+    <div id="wrapper">
+        <div id="div1"></div>
+        <div id="modal" class="show">
+            <img src="images/winner.jpg" alt="You won" width="300px" height="300px">
+            <p id='congrats'>Congratulations! You won!</p>
+            <p>Your score is:
+                <span id="score"></span> points</p>
+            <button type="button" id="button">Start a new game</button>
+        </div>
+        <div id="div2"></div>
+    </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+
+</html>

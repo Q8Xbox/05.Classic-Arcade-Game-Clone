@@ -1,0 +1,137 @@
+body {
+    text-align: center;
+    position: relative;
+    background:url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#board {
+    width:700px;
+    height: 50px;
+    background-color: #0661ff;
+    margin-top:7%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    margin-bottom:10px;
+    color: #fff;
+    padding:0px;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+#board p{
+    margin:0px;
+    display: inline-block;
+    background: #0661ff;
+    color: #fff;
+    padding:10px 0px;
+    height: 100%;
+    display: inline-block;
+    padding-left: 20px;
+    text-align: left;
+}
+#board #points{
+    float: left;
+    width:50%;
+}
+#board #timer{
+    background: #a70606;
+    color: #fff;
+    float: right;
+    width:30%;
+    padding-right:30px;
+    text-align: right;
+}
+
+.transparent {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    z-index: -1;
+}
+
+#wrapper {
+    display: flex;
+    min-width: 100%;
+    margin-top: -606px;
+}
+
+#div1, #div2 {
+    width: 30%;
+}
+
+#modal {
+    width: 40%;
+    min-width: 700px;
+    height: 606px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    z-index: 1;
+    align-self: center;
+
+}
+#modal img{
+    width: 200px;
+    height: auto;
+    margin: 19px 0px 0px;
+}
+
+#congrats {
+    font-family: 'Roboto', cursive;
+    font-size:2.5em;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+#congrats img{
+    width:40px;
+    height: auto;
+    padding-left: 15px;
+}
+
+button {
+    background-color: #0661ff;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    border:none;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+
+}
+
+.show {
+    visibility: visible;
+}
+
+#canvas {
+    z-index: -1;
+    position: relative;
+    display: inline-block;
+}
+#canvas::after{
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0px;
+    height: calc(100% - 26px);
+    width: calc(100% - 5px);
+    border: 5px solid #fff;
+}
+
+#score{
+    background: #296ff4;
+    padding: 0px 10px;
+    color: #fff;
+    border-radius: 3px;
+}
